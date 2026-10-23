@@ -1,4 +1,5 @@
 import mahjong
+import sys
 
 def solitaire():
     print("Solitaire.")
@@ -29,6 +30,8 @@ def main():
             case 3:
                 goFish()
                 choice = 0
+            case 4:
+                sys.exit(0)
             case _:
                 print("Loop")
                 choice = 0
