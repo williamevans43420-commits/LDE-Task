@@ -2,6 +2,7 @@ import mahjong
 
 def solitaire():
     print("Solitaire.")
+    banana = 1
 
 
 def mahjong():
