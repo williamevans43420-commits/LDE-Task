@@ -1,24 +1,19 @@
-import mahjong
 import sys
-from sudoku import Sudoku
 
-#Function that handles the Sudoku game
+#Function that handles the Coinflip game
 def game1():
-    puzzle = Sudoku(3).difficulty(0.5)
-    puzzle.show()
-
+    print("Coinflip")
     return
 
-#Function that handles the Go Fish game
+#Function that handles the Text Adventure game
 def game2():
-    print("Go Fish.")
+    print("PAUL.")
     return
 
-#Function that handles the Mahjong game
+#Function that handles the Rock Paper Scissors game
 def game3():
-    print("Mahjong.")
+    print("RPS.")
     return
-
 
 def main():
     #Sets the default value of choice to 0 to setup for the while loop
@@ -31,17 +26,17 @@ def main():
         match choice:
             #1st choice launches Sudoku
             case 1:
-                print("Launching Sudoku.")
+                print("Launching Coinflip...")
                 game1()
                 choice = 0
             #2nd choice launches Go Fish
             case 2:
-                print("Launching Go Fish.")
+                print("Launching Adventure Game...")
                 game2()
                 choice = 0
             #3rd choice launches Mahjong
             case 3:
-                print("Launching Mahjong.")
+                print("Launching Rock Paper Scissors...")
                 game3()
                 choice = 0
             #Exit the game menu
